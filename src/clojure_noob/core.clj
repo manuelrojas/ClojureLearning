@@ -9,15 +9,15 @@
 
 (defn error-message
   [severity]
-  (str "OH GOD! IT'S A DISASTER! WE'RE "
-  (if (= severity :mild)
-     "MILDLY INCONVENIENCED!"
-     "DOOOOOOOMED!")))
+  (println (str "OH GOD! IT'S A DISASTER! WE'RE "
+    (if (= severity :mild)
+       "MILDLY INCONVENIENCED!"
+       "DOOOOOOOMED!"))))
 
 (defn -main
   [& args]
   (error-message :mild)
-  (too-enthusiastic :sup)
+  (too-enthusiastic :Manuel)
   
   (if (= 1 2)
     (do (println "Success!")
